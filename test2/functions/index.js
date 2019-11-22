@@ -26,6 +26,7 @@ app.get('/timestamp-cached', (request, response) => {
 });
 
 app.get('/webcam_face_expression_recognition', (req, res) => res.sendFile(path.join(viewsDir, 'webcamFaceExpressionRecognition.html')));
+// app.get('/realtime', (req, res) => res.sendFile(path.join(viewsDir, 'webcamFaceExpressionRecognition.html')));
 
 // // Create and Deploy Your First Cloud Functions
 // // https://firebase.google.com/docs/functions/write-firebase-functions
