@@ -25,34 +25,6 @@ async function requestExternalImage(imageUrl) {
 function renderNavBar(navbarId, exampleUri) {
   const examples = [
     {
-      uri: 'face_detection',
-      name: 'Face Detection'
-    },
-    {
-      uri: 'face_landmark_detection',
-      name: 'Face Landmark Detection'
-    },
-    {
-      uri: 'face_expression_recognition',
-      name: 'Face Expression Recognition'
-    },
-    {
-      uri: 'age_and_gender_recognition',
-      name: 'Age and Gender Recognition'
-    },
-    {
-      uri: 'face_recognition',
-      name: 'Face Recognition'
-    },
-    {
-      uri: 'face_extraction',
-      name: 'Face Extraction'
-    },
-    {
-      uri: 'video_face_tracking',
-      name: 'Video Face Tracking'
-    },
-    {
       uri: 'webcam_face_detection',
       name: 'Webcam Face Detection'
     },
@@ -67,30 +39,6 @@ function renderNavBar(navbarId, exampleUri) {
     {
       uri: 'webcam_age_and_gender_recognition',
       name: 'Webcam Age and Gender Recognition'
-    },
-    {
-      uri: 'bbt_face_landmark_detection',
-      name: 'BBT Face Landmark Detection'
-    },
-    {
-      uri: 'bbt_face_similarity',
-      name: 'BBT Face Similarity'
-    },
-    {
-      uri: 'bbt_face_matching',
-      name: 'BBT Face Matching'
-    },
-    {
-      uri: 'bbt_face_recognition',
-      name: 'BBT Face Recognition'
-    },
-    {
-      uri: 'batch_face_landmarks',
-      name: 'Batch Face Landmark Detection'
-    },
-    {
-      uri: 'batch_face_recognition',
-      name: 'Batch Face Recognition'
     }
   ]
 
