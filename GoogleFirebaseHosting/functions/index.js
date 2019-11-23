@@ -7,12 +7,6 @@ const faceapi = require('face-api.js');
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
-app.use(express.static(path.join(__dirname, './public')))
-app.use(express.static(path.join(__dirname, '../images')))
-app.use(express.static(path.join(__dirname, '../media')))
-app.use(express.static(path.join(__dirname, './models')))
-app.use(express.static(path.join(__dirname, '../../dist')))
-
 const viewsDir = path.join(__dirname, 'views')
 console.log(viewsDir)
 
@@ -23,14 +17,7 @@ app.get('/webcam_face_landmark_detection', (req, res) => res.sendFile(path.join(
 app.get('/webcam_face_expression_recognition', (req, res) => res.sendFile(path.join(viewsDir, 'webcamFaceExpressionRecognition.html')))
 app.get('/webcam_age_and_gender_recognition', (req, res) => res.sendFile(path.join(viewsDir, 'webcamAgeAndGenderRecognition.html')))
 
-// app.get('/webcam_face_expression_recognition', (req, res) => res.sendFile(path.join(viewsDir, 'webcamFaceExpressionRecognition.html')));
-// app.get('/realtime', (req, res) => res.sendFile(path.join(viewsDir, 'webcamFaceExpressionRecognition.html')));
-
-// // Create and Deploy Your First Cloud Functions
-// // https://firebase.google.com/docs/functions/write-firebase-functions
-//
-
-console.log(faceapi.nets)
+//console.log(faceapi.nets)
 
 exports.app = functions.https.onRequest(app);
 
