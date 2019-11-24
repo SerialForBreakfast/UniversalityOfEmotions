@@ -39,6 +39,14 @@ function renderNavBar(navbarId, exampleUri) {
     {
       uri: 'webcam_age_and_gender_recognition',
       name: 'Webcam Age and Gender Recognition'
+    },
+    {
+      uri: 'face_expression_recognition',
+      name: 'Face Expression Recognition'
+    },
+    {
+      uri: 'age_and_gender_recognition',
+      name: 'Age and Gender Recognition'
     }
   ]
 
