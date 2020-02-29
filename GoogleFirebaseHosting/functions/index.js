@@ -10,7 +10,7 @@ app.use(express.urlencoded({ extended: true }))
 const viewsDir = path.join(__dirname, 'views')
 console.log(viewsDir)
 
-app.use(express.static(path.join(__dirname, '../images')))
+app.use(express.static(path.join(__dirname, 'images')))
 
 app.get('/', (req, res) => res.redirect('/webcam_face_expression_recognition'))
 
